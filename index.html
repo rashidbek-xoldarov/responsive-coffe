@@ -1,43 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Template project</title>
-  <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
-  <!-- <link rel="stylesheet" href="./css/main.css"> -->
-  <link rel="stylesheet" href="./css/main.min.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template project</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- <link rel="stylesheet" href="./css/main.min.css"> -->
+  </head>
+  <body>
+    <!-- Site header start -->
+    <header class="site-header">
+      <div class="container">
+        <div class="site-header__inner">
+          <a class="logo" href="./index.html">
+            <img
+              class="logo__img"
+              src="./images/logo-mobile.svg"
+              alt="logo-img"
+              width="163"
+              height="18"
+            />
+          </a>
+          <nav class="sitenav">
+            <ul class="sitenav__list">
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#">HOME</a>
+              </li>
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#">ABOUT US</a>
+              </li>
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#">Create your plan</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="modal-btn"></button>
+        </div>
+      </div>
+    </header>
+    <!-- Site header finish -->
 
+    <!-- Site main start -->
 
-  <!-- Site header start -->
-  <header class="site-header">
-    <!-- Your header code here -->
-  </header>
-  <!-- Site header finish -->
+    <main class="site-main">
+      <!-- Hero section start -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero__inner">
+            <div class="hero__info info-hero">
+              <h1 class="info-hero__title">Great coffee made simple.</h1>
+              <p class="info-hero__text">
+                Start your mornings with the world’s best coffees. Try our
+                expertly curated artisan coffees from our best roasters
+                delivered directly to your door, at your schedule.
+              </p>
+              <a class="info-hero__link" href="#">Create your plan</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Hero section finish -->
 
-  <!-- Site main start -->
+      <!-- Our collection -->
+      <section class="collection">
+        <div class="container">
+          <div class="collection__inner">
+            <ul class="collection__list">
+              <li class="collection__item item-collection">
+                <div class="item-collection__info">
+                  <h3 class="item-collection__title">Gran Espresso</h3>
+                  <p class="item-collection__text">
+                    Light and flavorful blend with cocoa and black pepper for an
+                    intense experience.
+                  </p>
+                </div>
+              </li>
+              <li class="collection__item item-collection">
+                <div class="item-collection__info">
+                  <h3 class="item-collection__title">Planalto</h3>
+                  <p class="item-collection__text">
+                    Brazilian dark roast with rich and velvety body, and hints
+                    of fruits and nuts.
+                  </p>
+                </div>
+              </li>
+              <li class="collection__item item-collection">
+                <div class="item-collection__info">
+                  <h3 class="item-collection__title">Piccollo</h3>
+                  <p class="item-collection__text">
+                    Mild and smooth blend featuring notes of toasted almond and
+                    dried cherry.
+                  </p>
+                </div>
+              </li>
+              <li class="collection__item item-collection">
+                <div class="item-collection__info">
+                  <h3 class="item-collection__title">Danche</h3>
+                  <p class="item-collection__text">
+                    Ethiopian hand-harvested blend densely packed with vibrant
+                    fruit notes.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- /Our collection -->
 
-  <main class="site-main">
+      <!-- Choose -->
+      <section class="choose">
+        <div class="container">
+          <div class="choose__inner">
+            <div class="choose__info info-choose">
+              <h2 class="info-choose__title">Why choose us?</h2>
+              <p class="info-choose__text">
+                A large part of our role is choosing which particular coffees
+                will be featured in our range. This means working closely with
+                the best coffee growers to give you a more impactful experience
+                on every level.
+              </p>
+            </div>
+            <ul class="choose__list">
+              <li class="choose__item">
+                <div class="choose__item-info item-info-choose">
+                  <h3 class="item-info-chooose__title">Best quality</h3>
+                  <p class="item-info-choose__text">
+                    Discover an endless variety of the world’s best artisan
+                    coffee from each of our roasters.
+                  </p>
+                </div>
+              </li>
+              <li class="choose__item">
+                <div class="choose__item-info item-info-choose">
+                  <h3 class="item-info-chooose__title">Exclusive benefits</h3>
+                  <p class="item-info-choose__text">
+                    Special offers and swag when you subscribe, including 30%
+                    off your first shipment.
+                  </p>
+                </div>
+              </li>
+              <li class="choose__item">
+                <div class="choose__item-info item-info-choose">
+                  <h3 class="item-info-chooose__title">Free shipping</h3>
+                  <p class="item-info-choose__text">
+                    We cover the cost and coffee is delivered fast. Peak
+                    freshness: guaranteed.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- /Choose -->
+    </main>
 
-    <!-- Hero section start -->
-    <section class="hero">
-      <!-- Your hero section code here -->
-    </section>
-    <!-- Hero section finish -->
+    <!-- Site main finish -->
 
-  </main>
+    <!-- Site footer start -->
 
-  <!-- Site main finish -->
+    <footer class="site-footer">
+      <!-- Your footer code here -->
+    </footer>
+    <!-- Site footer finish -->
 
-  <!-- Site footer start -->
+    <div class="navbar">
+      <ul class="sitenav__list">
+        <li class="sitenav__item">
+          <a class="sitenav__link" href="#">HOME</a>
+        </li>
+        <li class="sitenav__item">
+          <a class="sitenav__link" href="#">ABOUT US</a>
+        </li>
+        <li class="sitenav__item">
+          <a class="sitenav__link" href="#">Create your plan</a>
+        </li>
+      </ul>
+    </div>
 
-  <footer class="site-footer">
-    <!-- Your footer code here -->
-  </footer>
-
-  <!-- Site footer finish -->
-</body>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
