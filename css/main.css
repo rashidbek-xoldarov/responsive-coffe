@@ -564,9 +564,6 @@ body {
 
 /* About page */
 /* Intro */
-.inro {
-}
-
 .inro__inner {
   padding: 100px 20px 80px;
   background-image: url("../images/about-bg.jpg");
@@ -653,9 +650,6 @@ body {
   text-align: center;
 }
 
-.info-quality {
-}
-
 .info-quality__title {
   margin-top: 0;
   margin-bottom: 18px;
@@ -683,6 +677,87 @@ body {
   object-fit: cover;
   object-position: bottom;
   border-radius: 8px;
+}
+
+/* Locatio */
+.location {
+  margin-top: 100px;
+}
+
+.location__inner {
+}
+
+.location__title {
+  margin-top: 0;
+  margin-bottom: 65px;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #83888f;
+}
+
+.location__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.location__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.location__item:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.location__item::before {
+  display: inline-block;
+  width: 52px;
+  height: 50px;
+  content: "";
+  margin-bottom: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.location__item:nth-child(1):before {
+  background-image: url("../images/uk.svg");
+}
+
+.location__item:nth-child(2):before {
+  background-image: url("../images/canada.svg");
+}
+
+.location__item:nth-child(3):before {
+  background-image: url("../images/australia.svg");
+}
+
+.item-location__title {
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333d4b;
+}
+
+.item-location__address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-location__link {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #333d4b;
+  text-decoration: none;
 }
 
 /* Footer */
@@ -861,6 +936,27 @@ body {
     top: -78px;
     left: calc(50% - 140px);
   }
+
+  .location {
+    margin-top: 120px;
+  }
+
+  .location__inner {
+  }
+
+  .location__title {
+    margin-bottom: 72px;
+  }
+
+  .location__item:not(:last-child) {
+    margin-bottom: 80px;
+  }
+
+  .item-location__title {
+    margin-bottom: 22px;
+    font-size: 28px;
+    line-height: 36px;
+  }
 }
 
 @media only screen and (min-width: 500px) {
@@ -885,6 +981,29 @@ body {
     height: 220px;
     top: -100px;
     left: calc(50% - 180px);
+  }
+
+  .location {
+    margin-top: 130px;
+  }
+
+  .location__title {
+    margin-bottom: 78px;
+    font-size: 28px;
+  }
+
+  .location__item:not(:last-child) {
+    margin-bottom: 90px;
+  }
+
+  .item-location__title {
+    margin-bottom: 26px;
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .item-collection__text {
+    font-size: 17px;
   }
 }
 
@@ -949,6 +1068,25 @@ body {
     max-width: 520px;
     margin-right: auto;
     margin-left: auto;
+  }
+
+  .location {
+    margin-top: 140px;
+  }
+
+  .location__title {
+    margin-bottom: 78px;
+    font-size: 32px;
+  }
+
+  .item-location__title {
+    margin-bottom: 28px;
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .item-collection__text {
+    font-size: 20px;
   }
 }
 
@@ -1244,6 +1382,55 @@ body {
     top: -160px;
     left: calc(50% - 286px);
   }
+
+  .location {
+    margin-top: 144px;
+  }
+
+  .location__inner {
+  }
+
+  .location__title {
+    font-size: 24px;
+    line-height: 32px;
+    text-align: left;
+  }
+
+  .location__list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .location__item {
+    align-items: flex-start;
+  }
+
+  .location__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .location__item::before {
+    margin-bottom: 49px;
+  }
+
+  .item-location__title {
+    margin-bottom: 21px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .item-location__address {
+    align-items: flex-start;
+  }
+
+  .item-location__link {
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -1359,6 +1546,11 @@ body {
     height: 320px;
     top: 50px;
     left: calc(50% + 90px);
+  }
+
+  .location__inner {
+    padding-left: 58px;
+    padding-right: 58px;
   }
 }
 
@@ -1601,5 +1793,28 @@ body {
     height: 447px;
     top: -88px;
     right: 85px;
+  }
+
+  .location {
+    margin-top: 168px;
+  }
+
+  .location__inner {
+    padding-left: 85px;
+    padding-right: 85px;
+  }
+
+  .location__title {
+    margin-bottom: 72px;
+  }
+
+  .location__item::before {
+    margin-bottom: 46px;
+  }
+
+  .item-location__title {
+    margin-bottom: 24px;
+    font-size: 32px;
+    line-height: 36px;
   }
 }
